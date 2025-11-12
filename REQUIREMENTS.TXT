@@ -1,0 +1,7 @@
+streamlit
+requests
+geopy
+certifi
+pytz
+matplotlib
+pandas
