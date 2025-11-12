@@ -1,6 +1,7 @@
 import ssl
 import certifi
 import geopy.geocoders
+import geopy
 from geopy.geocoders import Nominatim
 
 # Force Geopy to use updated certificates
@@ -174,5 +175,6 @@ for i in range(0, len(cities), cards_per_row):
                     fig.patch.set_facecolor((0, 0, 0, 0))
 
                     st.pyplot(fig)
+
 
             st.markdown("</div>", unsafe_allow_html=True)
