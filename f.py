@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 from datetime import datetime
 import pytz
-import matplotlib.pyplot as plt
+import matplotlib as plt
 import pandas as pd
 
 st.set_page_config(page_title="🌍 Weather Dashboard", page_icon="🌦", layout="wide")
@@ -151,4 +151,5 @@ for i in range(0, len(cities), cards_per_row):
                     st.download_button("📥 Download Weekly Data", data=csv, file_name=f"{city}_weather.csv", mime="text/csv")
 
             st.markdown("</div>", unsafe_allow_html=True)
+
 
