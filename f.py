@@ -1,10 +1,3 @@
-import ssl
-import certifi
-import geopy.geocoders
-from geopy.geocoders import Nominatim
-
-ctx = ssl.create_default_context(cafile=certifi.where())
-geopy.geocoders.options.default_ssl_context = ctx
 
 import streamlit as st
 import requests
@@ -158,3 +151,4 @@ for i in range(0, len(cities), cards_per_row):
                     st.download_button("📥 Download Weekly Data", data=csv, file_name=f"{city}_weather.csv", mime="text/csv")
 
             st.markdown("</div>", unsafe_allow_html=True)
+
