@@ -1,8 +1,7 @@
 streamlit
 requests
-geopy.geocoders
-certifi
+geopy
 pytz
 matplotlib
-geopy
 pandas
+certifi
