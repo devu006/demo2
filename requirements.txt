@@ -1,5 +1,0 @@
-streamlit
-wikipedia
-gTTS
-SpeechRecognition
-requests
